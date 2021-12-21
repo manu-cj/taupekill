@@ -9,7 +9,7 @@ function startGame() {
     setInterval(() => {
         hole = randomHole()
         hole.toggleClass('up');
-    }, 600)
+    }, 800)
     setInterval(() => {
 
         hole.toggleClass('up');

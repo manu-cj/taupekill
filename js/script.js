@@ -20,6 +20,7 @@ $('#startGame').click(function () {
     score = 0;
     scoreBoard.text(score);
     holes.show();
+    holes.removeClass('up');
     startGame()
 })
 

@@ -32,7 +32,7 @@ let score = 0;
 
 
 //up the hole
-holes.click(function () {
-    this.removeClass('up');
+moles.click(function () {
+    hole.removeClass('up');
     scoreBoard.text(score++);
 });

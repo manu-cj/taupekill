@@ -31,7 +31,6 @@ let score = 0;
         return $(holes.get(r));
     }
 
-
 //up the hole
 $('.mole').click(function () {
     $(this).closest('.hole').removeClass('up');

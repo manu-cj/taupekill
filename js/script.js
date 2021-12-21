@@ -9,7 +9,7 @@ function startGame() {
     setInterval(() => {
         hole = randomHole()
         hole.toggleClass('up');
-    }, 200)
+    }, 600)
     setInterval(() => {
 
         hole.toggleClass('up');
@@ -18,6 +18,7 @@ function startGame() {
 
 $('#startGame').click(function () {
     score = 0;
+    scoreBoard.text(score);
     holes.show();
     startGame()
 })

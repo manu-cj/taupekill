@@ -9,7 +9,7 @@ function startGame() {
     setInterval(() => {
         hole = randomHole()
         hole.toggleClass('up');
-    }, 800)
+    }, 600)
     setInterval(() => {
 
         hole.toggleClass('up');
@@ -33,7 +33,7 @@ let score = 0;
 
 
 //up the hole
-moles.click(function () {
-    hole.removeClass('up');
+$('.mole').click(function () {
+    $(this).closest('.hole').removeClass('up');
     scoreBoard.text(score++);
 });
